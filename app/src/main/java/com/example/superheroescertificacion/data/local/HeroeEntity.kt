@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "Heroes_table")
 data class HeroeEntity (
         @PrimaryKey val id: Int,
-        val nonbre: String,
+        val nombre: String,
         val origen: String,
         val link: String,
         val poder: String,

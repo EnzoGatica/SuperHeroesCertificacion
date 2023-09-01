@@ -14,7 +14,7 @@ import com.google.gson.annotations.SerializedName
 */
 data class SuperHeroe (
     val id: Int,
-    val nonbre: String,
+    val nombre: String,
     val origen: String,
     @SerializedName("imagenLink") val link: String,
     val poder: String,
