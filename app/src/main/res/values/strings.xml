@@ -3,4 +3,21 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="btn_correo">Enviar mensaje</string>
+    <string name="destinatario_email">Comicconchile@hotmail.com</string>
+    <string name="asunto_email">Votacion %1$s</string>
+    <string name="body_email">
+        Hola \n
+    Quiero que el siguiente super héroes %1$s aparezca, en la nueva edición de \n
+    biografías animadas. \n
+    Número contacto: _________ \n
+    Gracias.”
+
+    </string>
+    <string name="traduccion_true">Cuenta con Traduccion al español</string>
+    <string name="traduccion_false">Sin Traduccion</string>
+    <string name="nombre_del_heroe">"Nombre del Heroe: "</string>
+    <string name="lugar_de_origen">"Lugar de origen: "</string>
+    <string name="su_poder">"Su poder: \n"</string>
+    <string name="fecha_de_creacion">"Fecha de creacion: "</string>
+    <string name="color_de_su_traje">"Color de su traje: "</string>
 </resources>

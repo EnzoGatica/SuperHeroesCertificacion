@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="btn_correo">Enviar mensaje</string>
+    <string name="traduccion_true">Cuenta con Traduccion al español</string>
+    <string name="traduccion_false">Sin Traduccion</string>
+    <string name="nombre_del_heroe">"Nombre del Heroe: $s "</string>
+    <string name="lugar_de_origen">"Lugar de origen: "</string>
+    <string name="su_poder">"Su poder: "</string>
+    <string name="fecha_de_creacion">"Fecha de creacion: "</string>
+    <string name="color_de_su_traje">"Color de su traje: "</string>
 </resources>
