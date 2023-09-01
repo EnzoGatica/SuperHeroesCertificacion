@@ -9,5 +9,14 @@
         android:id="@+id/listadoHeroes"
         android:name="com.example.superheroescertificacion.vistas.ListadoHeroes"
         android:label="fragment_listado_heroes"
-        tools:layout="@layout/fragment_listado_heroes" />
+        tools:layout="@layout/fragment_listado_heroes" >
+        <action
+            android:id="@+id/action_listadoHeroes_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.example.superheroescertificacion.vistas.DetalleFragment"
+        android:label="fragment_detalle"
+        tools:layout="@layout/fragment_detalle" />
 </navigation>
