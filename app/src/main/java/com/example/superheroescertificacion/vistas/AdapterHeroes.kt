@@ -1,9 +1,12 @@
 package com.example.superheroescertificacion.vistas
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.example.superheroescertificacion.R
 import com.example.superheroescertificacion.data.local.HeroeEntity
 import com.example.superheroescertificacion.databinding.ItemHeroeBinding
 
@@ -36,8 +39,13 @@ class AdapterHeroes: RecyclerView.Adapter<AdapterHeroes.ItemHeroeViewHolder>() {
     class ItemHeroeViewHolder(val heroesBinding: ItemHeroeBinding): RecyclerView.ViewHolder(heroesBinding.root) {
 
         fun bind(heroe: HeroeEntity){
+            val bundle = Bundle()
             heroesBinding.txtNombre.text = heroe.nombre
             heroesBinding.imgHeroe.load(heroe.link)
+            heroesBinding.cvItem.setOnClickListener{
+                bundle.putInt("id",heroe.id)
+                Navigation.findNavController(heroesBinding.root).navigate(R.id.action_listadoHeroes_to_detalleFragment,bundle)
+            }
 
         }
 

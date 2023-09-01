@@ -21,7 +21,7 @@ data class SuperHeroeDetalle(
     val origen: String,
     @SerializedName("imagenLink") val link: String,
     val poder: String,
-    @SerializedName("Año_creacion") val creacion: Int,
+    @SerializedName("año_creacion") val creacion: Int,
     val color: String,
     val traduccion: Boolean
 )

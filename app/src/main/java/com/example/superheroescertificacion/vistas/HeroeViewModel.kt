@@ -25,4 +25,11 @@ class HeroeViewModel(application: Application): AndroidViewModel(application) {
         repositorio.cargarHeroes()
     }
 
+    //Detalle Heroe
+    fun detalleLiveData(id:Int) = repositorio.cargarDetalleID(id)
+
+    fun getDetalleHeroe(id: Int) = viewModelScope.launch {
+        repositorio.cargarDetalleHeroe(id)
+    }
+
 }
